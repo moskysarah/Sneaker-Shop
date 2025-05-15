@@ -12,11 +12,11 @@
         <nav class="navbar">
             <img src="my pictures/logo nike.png" alt="Nike logo" class="logo">
             <ul class="nav-links">
-                <li><a href="#">Men</a></li>
-                <li><a href="#">Women</a></li>
-                <li><a href="#">Kids</a></li>
-                <li><a href="#">Accessories</a></li>
-                <li><a href="#">Sales</a></li>
+                <li><a href="men.html">Men</a></li>
+                <li><a href="women.html">Women</a></li>
+                <li><a href="kids.html">Kids</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="sales.html">Sales</a></li>
             </ul>
             
             <div class="nav-icons">
@@ -24,7 +24,9 @@
                 <input type="text" placeholder="Rechercher un sneaker...">
                 <i class="fas fa-search"></i>
               </div>
-              <i class="fas fa-shopping-cart cart-icon"></i>
+              <i class="fas fa-shopping-cart cart-icon">
+                    <span id="cart-count">1</span>
+              </i>
             </div>
         </nav>
     </header>
@@ -35,7 +37,8 @@
             <img src="my pictures/Black sneak.png" alt="Nike Air Max 90">
           </div>
          <div class="product-info">
-            <small>WOMEN’S SHOES</small>
+          <div class="small-text"><small>WOMEN’S SHOES</small>
+          </div>
             <h1>NIKE AIR MAX 90</h1>
             <h2>FUTURA</h2>
             <p class="price">$160</p>
@@ -52,17 +55,142 @@
                         <option>US 9</option>
                         <option>US 9.5</option>
                       </select>
+                  
                 </div>
-            <div>
-                <button class="add-to-cart">
-                    <img src="my pictures/Vector.png" alt="cart"> Add to Cart
-                </button>
+                      <div class="product">
+                        <a href="selected.html">
+                            <button class="selected-more" 
+                                data-product-id="123">
+                            
+                                SELECT MORE
+                            </button>
+                        </a>
+                        
+                      </div>
+
               </div>
-          </div>
-          </div>
+         </div>
          
             
       </div>
+
+      <div class="group_container_flex">
+        <div class="flex_content">
+            <div class="men_sneaker_container">
+               <img src="my pictures/sneak-red-white.png" alt="" width="200">
+               <p>Blow nike <strong>$99</strong> 
+                  Best sneaker 2025 your best choice
+               </p>
+                  <button class="add-to-cart" 
+                            data-product-id="123">
+                            <img class="img_cart" src="my pictures/Vector.png" alt="Nom du Produit" class="product-image">
+                            Add to cart
+                 </button>
+               
+            </div>
+            
+        </div>
+
+        <div class="flex_content">
+            <div class="women_sneaker_container">
+              <img src="my pictures/sneak-red-black.png" alt="" width="200">
+               <p>Blow nike <strong>$95</strong>
+                  Best sneaker 2025 your best choice
+               </p>
+               <button class="add-to-cart-id" 
+                            data-product-id="123">
+                            <img class="img_cart" src="my pictures/Vector.png" alt="Nom du Produit" class="product-image">
+                            Add to cart
+                 </button>
+                 
+            </div>
+              
+        </div>
+        <div class="flex_content">
+            <div class="kids_sneaker_container">
+              <img src="my pictures/sneak-red-white.png" alt="" width="200">
+               <p>Blow nike <strong>$90</strong>
+                  Best sneaker 2025 your best choice
+               </p>
+               <button class="add-to-cart" 
+                            data-product-id="123">
+                            <img class="img_cart" src="my pictures/Vector.png" alt="Nom du Produit" class="product-image">
+                            Add to cart
+                 </button>
+                 
+            </div>
+            
+        </div>
+
+        <div class="flex_content">
+            <div class="kids_sneaker_container">
+              <img src="my pictures/sneak-red-white.png" alt="" width="200">
+               <p>Blow nike <strong>$90</strong>
+                  Best sneaker 2025 your best choice
+               </p>
+               <button class="add-to-cart" 
+                            data-product-id="123">
+                            <img class="img_cart" src="my pictures/Vector.png" alt="Nom du Produit" class="product-image">
+                            Add to cart
+                 </button>
+                 
+            </div>
+            
+        </div>
+
+        <div class="flex_content">
+            <div class="kids_sneaker_container">
+              <img src="my pictures/sneak-red-white.png" alt="" width="200">
+               <p>Blow nike <strong>$90</strong>
+                  Best sneaker 2025 your best choice
+               </p>
+               <button class="add-to-cart" 
+                            data-product-id="123">
+                            <img class="img_cart" src="my pictures/Vector.png" alt="Nom du Produit" class="product-image">
+                            Add to cart
+                 </button>
+                 
+            </div>
+            
+        </div>
+        
+      </div>
+      
     </main>
+    <footer>
+          
+      <a href="https://www.instagram.com/nike/">
+        <img class="icon-social" src="my pictures/line-md--instagram (1).svg" alt="icon instagram">
+      </a>
+      <a href="https://x.com/Nike">
+        <img class="icon-social" src="my pictures/line-md--twitter (1).svg" alt="icon twitter">
+      </a>
+      <a href=" https://www.youtube.com/watch?v=aRh6GFIH11w">
+        <img class="icon-social" src="my pictures/line-md--youtube (1).svg" alt="icon youtube">
+      </a>
+          <div class="group_container_footer">
+            <div>
+              <p class="footer_para">United state</p>
+            </div>
+            <div>
+              <p class="footer_para">United kingdom</p>
+            </div>
+            <div>
+              <p class="footer_para">France</p>
+            </div>
+            <div>
+              <a href="https://www.nike.com/fr/">
+                    <p class="footer_para">www.nike.com</p>
+              </a>
+              
+            </div>
+            <div>
+              <p class="footer_para">sarahmosky@gmail.com</p>
+            </div>
+          </div>
+    </footer>
+   
+    
+    <script src="index.js"></script>
 </body>
 </html>

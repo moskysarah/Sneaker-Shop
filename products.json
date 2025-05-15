@@ -1,0 +1,27 @@
+
+[
+  {
+    "id": 1,
+    "name": "T-shirt Blanc",
+    "price": 19.99,
+    "image": "tshirt-blanc.jpg",
+    "description": "T-shirt en coton 100% bio",
+    "category": "vêtements"
+  },
+  {
+    "id": 2,
+    "name": "Chaussures de Sport",
+    "price": 89.99,
+    "image": "chaussures-sport.jpg",
+    "description": "Chaussures running confortables",
+    "category": "chaussures"
+  },
+  {
+    "id": 3,
+    "name": "Casque Audio",
+    "price": 129.99,
+    "image": "casque-audio.jpg",
+    "description": "Casque sans fil avec réduction de bruit",
+    "category": "électronique"
+  }
+]

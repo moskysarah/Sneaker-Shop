@@ -10,7 +10,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 1rem 2rem;
-    border: 1px solid violet;
+    border: 1px solid   rgba(204, 0, 255, 0.3);
     background: white;
 }
 
@@ -51,6 +51,7 @@ body {
     height: 500px;
     border-radius: 50%;
     background: #f0ebeb;
+    transition: all 0.25s cubic-bezier(0, 0, 0, 1);
     position: absolute;
     top: 10%;
     left: 10%;
@@ -103,7 +104,7 @@ select {
     padding: 0.5rem 1rem;
     font-weight: bold;
     border-radius: 8px;
-    background: #9f53ff;
+    background:  #1d1724;
     color: white;
     border: none;
     margin-top: 0.5rem;
@@ -112,9 +113,24 @@ select {
 
 .add-to-cart {
 
+    width: 120px;
+    height: 30px;
+    border: none;
+    color: #ffffff;
+    background-color: rgba(189, 14, 233, 0.811);
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 6px;
+    
+   
+}
+
+
+.selected-more {
+
     align-items: center;
     gap: 0.5rem;
-    background: black;
+    background:  rgba(189, 14, 233, 0.811);
     color: white;
     padding: 0.7rem 1.2rem;
     margin-top: 1.5rem;
@@ -122,9 +138,14 @@ select {
     border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
-    box-shadow: 3px 3px 8px rgba(0,0,0,0.2);
+   
 }
 
+
+.img_cart{
+    margin-right: 8px;
+
+}
 /* Icônes à droite */
 .nav-icons {
     display: flex;
@@ -148,13 +169,37 @@ select {
     background: transparent;
     padding-left: 0.5rem;
 }
+.small-text{
+    background-color: #000000;
+    border-radius: 8px;
+    padding-left: 1rem;
+    width: 120px;
+    height: 25px;
+    color: #ffffff;
+
+}
+
+.small-text-content{
+    display: flex;
+    gap: 1rem;
+}
+
 
 /* Icônes FontAwesome */
 .search-box i,
 .cart-icon {
+    position: relative;
     font-size: 18px;
     color: #333;
     cursor: pointer;
+}
+
+@keyframes bump {
+  0% { transform: scale(1); }
+  10% { transform: scale(0.9); }
+  30% { transform: scale(1.1); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
 }
 .content_button_option{
 
@@ -162,6 +207,135 @@ select {
     gap: 1rem;
 }
 
+.group_container_flex{
+    display: flex;
+    gap: 2rem;
+}
+.flex_content{
+    width: 230px;
+    height: 284px;
+    background-image: linear-gradient(163deg, #ff00ff 0%, #3700ff 100%);
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.25s cubic-bezier(0, 0, 0, 1);
+    margin-top: 16rem;
+}
+
+.men_sneaker_container{
+  width: 200px;
+  height: 254px;
+  background-color: #f0ebeb;
+  border-radius: 10px;
+  transition: all 0.25s cubic-bezier(0, 0, 0, 1);
+  padding: 15px;
+  cursor: pointer;
+
+}
+
+.women_sneaker_container{
+  width: 200px;
+  height: 254px;
+  background-color:#f0ebeb;
+  border-radius: 10px;
+  transition: all 0.25s cubic-bezier(0, 0, 0, 1);
+  padding: 15px;
+  cursor: pointer;
+    
+}
+
+.kids_sneaker_container{
+  width: 200px;
+  height: 254px;
+  background-color:#f0ebeb;
+  border-radius: 10px;
+  transition: all 0.25s cubic-bezier(0, 0, 0, 1);
+  padding: 15px;
+  cursor: pointer;
+    
+}
+
+
+.flex_content:hover {
+  
+  box-shadow: 0px 0px 30px 1px rgba(204, 0, 255, 0.3);
+   transform: scale(0.98);
+}
+
+.circle-bg{
+    box-shadow: 0px 0px 30px 1px rgba(204, 0, 255, 0.3);
+}
+
+
+.men_sneaker_container:hover {
+ transform: scale(0.98);
+  border-radius: 18px;
+}
+
+
+.women_sneaker_container:hover {
+   transform: scale(0.98);
+  border-radius: 18px;
+}
+
+.kids_sneaker_container:hover {
+   transform: scale(0.98);
+  border-radius: 18px;
+}
+
+
+.men_sneaker_container:hover {
+ transform: scale(0.98);
+  border-radius: 18px;
+}
+
+.add-to-cart-id{
+    margin-top: 1%;
+    width: 120px;
+    height: 30px;
+    border: none;
+    color: #ffffff;
+    background-color: rgba(189, 14, 233, 0.811);
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+   /* footer */
+
+
+footer{
+    background-color: #1d1724;
+    height: 300px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.icon-social{
+    margin-top: 10rem;
+    margin-left: 12px;
+}
+
+.container_footer{
+    display: flex;
+}
+
+
+.footer_paragraph{
+   color: #ffffff;
+    margin-left: 12px;
+    margin-top: 5rem;
+    
+}
+
+.video_section{
+  width: 140%;
+  height: 10%;
+
+
+
+
+}
 /* hover comportement */
 
 
@@ -173,15 +347,49 @@ select {
 
 
 .add-to-cart:hover{
-    background: #9f53ff;
+    background: #000000;
     color: white;
-    padding: 0.7rem 1.2rem;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
+    
+}
+
+.add-to-cart-id:hover{
+    background: #000000;
+    color: white;
+    
 }
 
 .nav-links a:hover{
     color: #9f53ff;
 }
+
+.group_container_footer{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    margin-top: 2rem;
+    
+}
+
+.footer_para{
+    color: #ffffff;
+    font-size: 1rem;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
